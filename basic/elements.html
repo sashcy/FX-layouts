@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Champion FX</title>
+<!--[if mso]>
+<style>
+.ms-font {
+font-family: Helvetica, Arial, sans-serif !important;
+}
+</style>
+<![endif]-->
+<style>
+/* ------------------------------------- 
+      GLOBAL 
+------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* { 
+  margin:0;
+  padding:0;
+  font-family: "Montserrat", "Helvetica", Helvetica, Arial, sans-serif; 
+  text-rendering: optimizelegibility;
+}
+
+img { 
+  max-width: 100%; 
+}
+.collapse {
+  margin:0;
+  padding:0;
+}
+body {
+  -webkit-font-smoothing:antialiased; 
+  -webkit-text-size-adjust:none; 
+  width: 100%!important; 
+  height: 100%;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif; 
+  text-rendering: optimizelegibility;
+  font-size:16px; 
+  line-height:1.8;
+  color: #000000;
+}
+
+
+/* ------------------------------------- 
+    ELEMENTS 
+------------------------------------- */
+#logo {
+	height: auto;
+	width:350px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 40px;
+}
+.logo img {
+    text-align: center !important;
+}
+a,
+a:visited {
+    color: #004385;
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover,
+a:active,
+a:visited:hover,
+a:visited:active {
+    text-decoration: underline;
+}
+p {
+    margin: 1em 0;
+    line-height: 1.4em;
+}
+
+
+button {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 0;
+    background: #013365;
+    color: #FFF
+}
+
+button:active,
+button:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .25s
+}
+
+button:visited {
+    color: #FFF
+}
+
+button:active,
+button:hover {
+    background-color: #004385
+}
+
+button.button-secondary {
+    background: #F2F2F2;
+    color: #000
+}
+
+button.button-secondary:active,
+button.button-secondary:hover,
+button.button-secondary:visited {
+    background-color: #DEDEDE
+}
+
+.button {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+
+.button span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
+    overflow: visible;
+    border: 0;
+    color: #FFF;
+    background: #013365
+}
+
+.button span:active,
+.button span:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .25s
+}
+
+.button span:hover {
+    background-color: #004385
+}
+
+.button spanvisited {
+    color: #FFF
+}
+
+.button-secondary {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+
+.button-secondary span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
+    overflow: visible;
+    border: 0;
+    color: #004385;
+    background: #fff;
+    border-radius: 100px
+}
+
+.button-secondary span:active,
+.button-secondary span:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .25s
+}
+
+.button-secondary span:hover {
+    text-decoration: none;
+    background: #F2F2F2
+}
+
+p.callout {
+	padding:15px;
+	background-color:#F2F2F2;
+	margin-bottom: 25px;
+	color: #000000;
+	text-align: center;
+}
+
+p.caption {
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+p.footer {
+    color: #000000;
+    font-size: 13px;
+    text-align: left;
+}
+
+hr.footer { 
+    color: #DEDEDE;
+    background-color: #DEDEDE;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------------------- 
+    HEADER 
+------------------------------------- */
+table.head-wrap { width: 100%;}
+
+.header.container table td.logo { padding: 25px; }
+.header.container table td.label { padding: 15px; padding-left:0px;}
+
+
+/* ------------------------------------- 
+    BODY 
+------------------------------------- */
+table.body-wrap { width: 100%;}
+
+
+/* ------------------------------------- 
+    FOOTER 
+------------------------------------- */
+table.footer-wrap { width: 100%;  clear:both!important; border-top: 1px solid #DEDEDE;
+}
+.footer-wrap .container td.content { border-top: 10px solid rgb(215,215,215); padding-top:15px;}
+.footer-wrap .container td.content p {
+    font-size:13px;
+    font-weight: 400;
+  
+}
+
+
+/* ------------------------------------- 
+    TYPOGRAPHY 
+------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif; line-height: 1.4;  margin:15px 0;
+}
+
+h1 { font-weight:400; font-size: 36px; color: #004385;}
+h2 { font-weight:400; font-size: 28px; color: #004385;}
+h3 { font-weight:400; font-size: 22px; color: #004385;}
+h4 { font-weight:400; font-size: 18px; color: #004385;}
+h5 { font-weight:400; font-size: 16px;}
+h6 { font-weight:400; font-size: 14px;}
+
+.collapse { margin:0!important;}
+
+ol,
+ul {
+    list-style: none
+}
+
+ul.bullet {
+    margin: 1.25em 0 1.25em 1.25em
+}
+
+ol {
+    margin: 1.25em 0 1.25em 1.25em
+}
+
+ul.bullet li {
+    list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23004385' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5'/%3E%3C/svg%3E")
+}
+
+ol li,
+ul li {
+    line-height: 1.4em;
+    margin: .5em 0 0
+}
+
+ol li ol,
+ol li ul,
+ul li ol,
+ul li ul {
+    margin: .8em 0 0 1em
+}
+
+ol li {
+    list-style-type: decimal;
+    list-style-image: none
+}
+
+img {
+    vertical-align: middle;
+    border: 0
+}
+
+ul.checked li {
+    min-height: 24px;
+    padding-left: 35px;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg width='24px' height='24px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolygon fill='%23004385' points='8.308 22.298 0.399 14.39 3.934 10.854 8.308 15.228 20.066 3.47 23.601 7.005 8.308 22.298'/%3E%3C/svg%3E") no-repeat
+}
+
+i {
+    font-style: italic
+}
+
+
+/* ------------------------------------------- 
+    MODIFIERS 
+-------------------------------------------- */
+.font-n{
+    font-size: 16px;
+}
+.font-s{
+    font-size: 14px;
+}
+.font-xs{
+    font-size: 12px;
+}
+
+.primary-color {
+    background-color: #004385;
+}
+
+.primary-bg-color {
+    background-color: #FFFFFF;
+}
+
+.secondary-color {
+    color: #004385;
+}
+
+.secondary-bg-color {
+    background-color: #004385;
+}
+
+.primary-color-dark {
+    background-color: #013365;
+}
+
+.primary-bg-color-dark {
+    background-color: #013365;
+}
+
+.content-inverse-color {
+    color: #FFFFFF;
+}
+
+.fill-bg-color {
+    background-color: #F2F2F2;
+}
+.centered {
+    text-align: center !important;
+}
+.separator {
+    border-top:1px solid #DEDEDE;
+    margin:20px 0; 
+ }
+/* --------------------------------------------------- 
+    RESPONSIVENESS
+    Nuke it from orbit. It's the only way to be sure. 
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+    display:block!important;
+    max-width:600px!important;
+    margin:0 auto!important; /* makes it centered */
+    clear:both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+    padding:15px;
+    max-width:600px;
+    margin:0 auto;
+    display:block; 
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+/* Odds and ends */
+.column {
+    width: 300px;
+    float:left;
+}
+.column tr td { padding: 15px; }
+.column-wrap { 
+    padding:0!important; 
+    margin:0 auto; 
+    max-width:600px!important;
+}
+.column table { width:100%;}
+
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+/* ------------------------------------------- 
+    PHONE
+    For clients that support media queries. 
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+  
+  a[class="button"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+  div[class="column"] { width: auto!important; float:none!important;}
+
+}
+
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+	<!-- HEADER -->
+	<table class="head-wrap" bgcolor="white">
+		<tr>
+			<td></td>
+				<td class="header container">
+					<div class="content">
+						<table bgcolor="#ffffff" style="padding:20px">
+							<tr>
+								<td class="centered logo">
+									<a href="https://www.champion-fx.com" title="Champion FX"><img src="https://style.champion-fx.com/images/logo/cfx_logo.png" alt="Champion FX" id="logo" title="Champion FX" /></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			<td></td>
+		</tr>
+	</table><!-- /HEADER -->
+	<!-- BODY -->
+	<table class="body-wrap">
+		<tr>
+			<td></td>
+			<td class="container" bgcolor="#FFFFFF">
+				<div class="content">
+					<table>
+						<tr>
+							<td>
+								<h1>h1 Heading</h1>
+								<h2>h2 Heading</h2>
+								<h3>h3 Heading</h3>
+								<h4>h4 Heading</h4>
+								<h5>h5 Heading</h5>
+								<h6>h6 Heading</h6>
+								<div class="separator"></div>
+								<p>paragraph with <strong>strong text</strong> and <a href="" title="Champion FX">Link Text</a></p>
+								<p class="font-s">This is small font</p>
+								<p class="font-xs">This is extra small font</p>
+								<div class="separator"></div>
+								<h4>Unordered</h4>								
+								<ul>
+									<li>unordered list item 1</li>
+									<li>unordered list item 2</li>
+									<li>unordered list item 3</li>
+								</ul>
+								<div class="separator"></div>
+								<h4>Bullets</h4>
+								<ul class="bullet">
+									<li>unordered list item 1</li>
+									<li>unordered list item 2</li>
+									<li>unordered list item 3</li>
+								</ul>
+								<div class="separator"></div>
+								<h4>Checked</h4>
+								<ul class="checked">
+									<li>unordered list item 1</li>
+									<li>unordered list item 2</li>
+									<li>unordered list item 3</li>
+								</ul>
+								<div class="separator"></div>
+								<h4>Ordered</h4>
+								<ol>
+									<li>ordered list item 1</li>
+									<li>ordered list item 2</li>
+									<li>ordered list item 3</li>
+								</ol>
+								<div class="separator"></div>
+								<p class="callout"><a class="button" href="#" title="Champion FX"><span>A call to action</span></a> Maybe some text here to help out...</p>	
+								<div class="separator"></div>
+								<h2>h2 For some title to go here</h2>
+								<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut adipiscing felis adipiscing eros pretium tincidunt. Sed blandit felis at nibh lacinia lobortis.</p>
+								<ul class="bullet">
+									<li>Nam felis nunc</li>
+									<li>Aliquam consequat malesuada libero.</li>
+									<li>Vivamus a erat odio</li>
+								</ul>
+								<p class="caption">Image caption can go here </p>								 
+							</td>
+						</tr>
+					</table>
+				</div><!-- /content -->
+			</td>
+			<td></td>
+		</tr>
+	</table><!-- /BODY -->
+	<!-- FOOTER -->
+	<table class="footer-wrap">
+		<tr>
+			<td></td>
+			<td class="container">
+			<!-- content -->
+				<div class="content">
+					<table>
+						<tr>
+							<td>
+								<p class="footer">
+								  Don't want to receive emails from us? <a href="{% unsubscribe_url %}"><unsubscribe>Unsubscribe</unsubscribe></a>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div><!-- /content -->
+			</td>
+			<td></td>
+		</tr>
+	</table><!-- /FOOTER -->
+</body>
+</html>
+
