@@ -15,7 +15,7 @@ font-family: Helvetica, Arial, sans-serif !important;
 /* ------------------------------------- 
       GLOBAL 
 ------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=vietnamese');
 
 * { 
   margin:0;
@@ -271,9 +271,9 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", Helvetica, Arial, sans-serif; line-height: 1.4;  margin:15px 0;
 }
 
-h1 { font-weight:400; font-size: 36px; color: #004385;}
-h2 { font-weight:400; font-size: 28px; color: #004385;}
-h3 { font-weight:400; font-size: 22px; color: #004385;}
+h1 { font-weight:300; font-size: 36px; color: #004385;}
+h2 { font-weight:300; font-size: 28px; color: #004385;}
+h3 { font-weight:300; font-size: 22px; color: #004385;}
 h4 { font-weight:400; font-size: 18px; color: #004385;}
 h5 { font-weight:400; font-size: 16px;}
 h6 { font-weight:400; font-size: 14px;}
@@ -547,5 +547,7 @@ i {
 			<td></td>
 		</tr>
 	</table><!-- /FOOTER -->
+	<!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
 </body>
 </html>
