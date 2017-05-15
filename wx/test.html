@@ -3,8 +3,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
     <title>Champion FX</title>
 </head>
 
@@ -95,7 +93,7 @@
     }
     
     #templateContainer {
-        width: 600px;
+        width: 700px;
     }
     
     body,
@@ -169,12 +167,6 @@
     text-decoration: none;
     font-weight: bold;
     }
-	a:hover,
-	a:active,
-	a:visited:hover,
-	a:visited:active {
-		text-decoration: underline;
-	}
 	.m_top_30 {
 		margin-top: 30px;
 	}
@@ -213,14 +205,14 @@
     /* Yahoo! Mail Override */
     
     {
-    color: #004385;
+        color: #2A3052;
     text-decoration: none;
     font-weight: bold;
     }
     
     #headerImage {
         height: auto;
-        max-width: 600px;
+        max-width: 700px;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -296,7 +288,7 @@
 	ol li,
 	ul li {
 		line-height: 1.4em;
-		margin: 10px 0;
+		margin: .5em 0 0
 		font-family: Montserrat, Helvetica, Arial, sans-serif;
 		font-size: 16px;
 	}
@@ -334,20 +326,11 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.FX_td__title {
-		background-color: #ffffff;
-		border-bottom: 2px solid #DEDEDE;
-		vertical-align: middle; 
-		padding: 10px;
-		width: 38%;
-	}
 	.FX_td {
-		
-		border-bottom: 2px solid #DEDEDE; 
-		vertical-align: middle; 
-		padding: 10px;
+		border-bottom: 2px solid #F2F2F2; 
+		vertical-align: top; 
+		padding: 10px 20px;
 	}
-	
     /* ========== Column Styles ========== */
     
     .templateColumnContainer {
@@ -659,13 +642,7 @@
         font-size:14px;
          line-height: 140%;
     }
-    .biel {
-		font-family: Montserrat, Helvetica, Arial, sans-serif;
-		font-size: 12px;		
-		color: #777777;
-		text-align:justify; 
-		padding: 10px;
-	}
+    .biel{font-size:12px;font-family: Montserrat, Helvetica, Arial, sans-serif;color:#999999;text-align:justify; padding: 10px;}
     /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
     
     @media only screen and (max-width: 480px) {
@@ -701,21 +678,9 @@
             margin-bottom: 20px!important;
         }
 		#logo {
-			height: auto;
-			width:250px;
-		}
-		.FX_td {
-			display: block!important;
-			border-bottom: 2px solid #DEDEDE; 
-			vertical-align: top; 
-			padding: 10px;
-		}
-		.FX_td__title {
-			display: block!important;
-			background-color: #ffffff;
-			width: auto;
-			font-weight: bold;
-		}
+    	height: auto;
+    	width:250px;
+    }
         /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
         /* ======== Page Styles ======== */
         
@@ -875,7 +840,7 @@
                                     <tr>
                                         <td valign="top" class="headerContent">
                                             <a href="https://www.champion-fx.com/en/home.html?utm_source=customer_io&utm_medium=email&utm_content=header_logo&utm_campaign=email_template">
-                                                <img src="https://style.champion-fx.com/images/email/logo_600px_b.png" alt="Champion FX" width="280" height="100" id="logo" />
+                                                <img src="https://style.champion-fx.com/images/logo/cfx_logo.png" alt=""width="280" height="100" id="logo" />
                                             </a>
                                         </td>
                                     </tr>
@@ -889,62 +854,49 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                     <tr>
                                         <td valign="top" class="bodyContent" style="width: 100%;">
-                                            <!-- ////////////////////////////////////////////////////////// 
-                                            {{content}}	
-											-->
-											
+                                            <!-- ////////////////////////////////////////////////////////// -->
+                                            {{content}}
 											<p>Dear {First Name} {Last Name},</p>
-											<p>Thank you for upgrading to a ChampionFX binary options real account.</p>
+											<p>You’ve successfully created your ChampionFX MT5 demo account.</p>
 											<p>Here are your login credentials:</p>
+
 											<table class="FX_table" width="100%">
 												<tr>
-													<td class="FX_td__title">Account type:</td>
+													<td class="FX_td">Account type:</td>
 													<td class="FX_td">{Account Type}</td>
 												</tr>
 												<tr>
-													<td class="FX_td__title">Trading platform:</td>
-													<td class="FX_td">Champion Trader</td>
+													<td class="FX_td">Trading platform:</td>
+													<td class="FX_td">MetaTrader 5</td>
 												</tr>
 												<tr>
-													<td class="FX_td__title">Champion Trader login:</td>
+													<td class="FX_td">MT5 platform login:</td>
 													<td class="FX_td">{Login}</td>
 												</tr>
+												<tr>
+													<td class="FX_td">Trading server:</td>
+													<td class="FX_td">ChampionGroup-Server</td>
+												</tr>
 											</table>
-											<p>To learn how to start using Champion Trader –– our dedicated binary options trading platform –– <a target="_blank" href="https://www.champion-fx.com/en/academy.html">visit the ChampionFX Academy</a> for videos, how-to guides, and more.</p>
-											<h2 class="m_top_30">Authenticate your account</h2>
-											<p>As part of our regulatory requirements, your account must be fully authenticated before you can start trading. Please send scanned copies of the following documents to <a target="_blank" href="mailto:support@champion-fx.com">support@champion-fx.com</a> in order to verify your identity and authenticate your account:</p>
+											<p>To learn how to start using our MT5 platform, visit the ChampionFX Academy for videos, how-to guides, and more.</p>
+											<h2 class="m_top_30">Trading platforms</h2>
+											<p>Launch our MT5 platform now and start trading today. We offer three versions of MT5:</p>
 											<table class="FX_table" width="100%">
 												<tr>
-													<td class="FX_td__title">Proof of identity</td>
-													<td class="FX_td">Passport, driving license, identity card that shows your full name and date of birth</td>
+													<td class="FX_td">Desktop</td>
 												</tr>
 												<tr>
-													<td class="FX_td__title">Proof of address</td>
-													<td class="FX_td">Utility bill or bank statement showing your name and address (not more than three months old</td>
+													<td class="FX_td">Web platform</td>
 												</tr>
-											</table>	
-											<h2 class="m_top_30">Stay Safe</h2>
-											<p>At ChampionFX, we take online security very seriously. To prevent security issues:</p>
-											<ul class="bullet">
-											<li>Don't click links in suspicious emails, SMSes, or pop-ups</li>
-											<li>Always type the web address yourself. Our URL is <a href="http://www.champion-fx.com">www.champion-fx.com</a></li>
-											<li>Check out the padlock icon on your browser. This icon indicates that the website uses a secure connection</li>
-											</ul>
-											<h2 class="m_top_30">Funding your account</h2>
-											<p>All you need to do now is deposit funds into your account via the cashier. Follow these simple steps:</p>
-											<ol class="bullet">
-											<li></li>
-											<li></li>
-											<li></li>
-											</ol>
-											<p>Got queries? Our customer support team is available to assist you. <a target="_blank" href="https://www.champion-fx.com/en/contact.html">Contact us </a>by live chat, telephone, or email now.</p>
-											<p>Keep trading with ChampionFX –– where the client is king.</p><br>
+												<tr>
+													<td class="FX_td">Mobile</td>
+												</tr>
+											</table>
+											<p>Please note that this demo account is based on our Cent account specifications. If you would like to try demos based on our Standard or STP accounts, please email us at support@champion-fx.com.</p>
+											<p>Got queries? Our customer support team is available to assist you. Contact us by live chat, telephone, or email now.</p>
+											<p>Keep trading with ChampionFX –– where the client is king.</p>
 											<p>Kind regards,</p>
-											<p>ChampionFX Team</p><br>
-											<p>P/S: Want to trade Forex, metals, and CFDs on the world’s most advanced multi-asset platform? Upgrade now to a ChampionFX MT5 real account.</p>
-											
-											
-											
+											<p>ChampionFX Team</p>
                                             <!-- ////////////////////////////////////////////////////////// -->
                                         </td>
                                     </tr>
@@ -1012,16 +964,18 @@
                                                         <tr>
                                                             <td class="rightColumnContent-footer">
                                                                 <a href="https://www.youtube.com/channel/UCBqTu-uQkmaIh5wgBswo2TA">
-                                                                    <img src="https://style.champion-fx.com/images/email/youtube.png" alt="YouTube">
+                                                                    <img src="https://marketing.binary.com/images/email/youtube.png">
                                                                 </a>
                                                                 <a href="https://www.facebook.com/championFX/">
-                                                                    <img src="https://style.champion-fx.com/images/email/facebook.png" alt="Facebook">
+                                                                    <img src="https://marketing.binary.com/images/email/facebook.png">
                                                                 </a>
                                                                 <a href="https://twitter.com/champion_fx">
-                                                                    <img src="https://style.champion-fx.com/images/email/twitter.png" alt="Twitter">
-                                                                </a>                                                               
+                                                                    <img src="https://marketing.binary.com/images/email/twitter.png">
+                                                                </a>
+                                                                
                                                             </td>
-                                                        </tr>                                                        
+                                                        </tr>
+                                                        
                                                     </table>
                                                 </td>
                                             </tr>
