@@ -1,0 +1,899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champion FX</title>
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse: collapse;}
+		.ms-font {font-family: Helvetica, Arial, sans-serif !important; font-size: 16px;}
+    </style>
+    <![endif]-->	
+
+<style type="text/css">
+/* ------------------------------------- 
+	GLOBAL
+------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=vietnamese');
+body {
+	width: 100%!important; 
+	height: 100%;
+    margin: 0 !important;
+    padding: 0;
+    background-color: #ffffff;
+	-webkit-font-smoothing:antialiased; 
+	 -webkit-text-size-adjust:none; 	
+	font-family: Montserrat, Helvetica, Arial, sans-serif; 	
+	font-size:16px; 
+	line-height:1.4;
+	color: #000000;
+	font-weight: 400;
+}
+table {
+    border-spacing: 0;
+}
+td {
+    padding: 0;	
+}
+img {
+    border: 0;
+}
+div[style*="margin: 16px 0"] { 
+    margin:0 !important;
+}
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.outer {
+	Margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+.full-width-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.inner {
+	padding: 10px;
+	font-family: Montserrat, Helvetica, Arial, sans-serif; 	
+	font-size: 16px; 
+	line-height: 1.4;
+	color: #000000;
+	font-weight: 400;
+}
+/* ------------------------------------- 
+    TYPOGRAPHY 
+------------------------------------- */
+p {
+    Margin: 10px 0;
+}
+a,
+a:visited {
+    color: #004385;
+    text-decoration: none;
+    font-weight: bold
+}
+a:hover,
+a:active,
+a:visited:hover,
+a:visited:active {
+    text-decoration: underline;
+}
+.h1, h1 { 
+	font-weight:300; 
+	font-size: 36px !important; 
+	color: #004385;
+	Margin-bottom: 18px;
+}
+.h2, h2 { 
+	font-weight:300; 
+	font-size: 28px !important; 
+	color: #004385;
+	Margin-bottom: 20px !important;
+}
+.h3, h3 { 
+	font-weight:300; 
+	font-size: 22px !important; 
+	color: #004385;
+	Margin-bottom: 15px !important;
+}
+.h4, h4 { 
+	font-weight:400 !important; 
+	font-size: 18px !important; 
+	color: #004385;
+}
+.h5, h5 { 
+	font-weight:400; 
+	font-size: 16px;
+	color: #000000;
+	Margin-bottom: 5px !important;
+}
+.h6, h6 { 
+	font-weight:400; 
+	font-size: 14px;
+	color: #000000
+	Margin-bottom: 2px !important;
+}
+/* ------------------------------------- 
+    ELEMENTS 
+------------------------------------- */
+.cfx-logo {
+	text-align: center;
+	Margin: 0 auto;
+	padding: 30px;
+}
+.cfx-logo img {
+    max-width: 100%;
+    height: auto;
+}
+.FX_table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.FX_table td {
+	text-align: left;
+}
+.FX_td__title {
+	background-color: #f2f2f2;
+	border-bottom: 2px solid #DEDEDE !important;
+	vertical-align: middle; 
+	padding: 10px;
+	width: 35%;
+}
+.FX_td {
+	width: 65%;
+	border-bottom: 2px solid #DEDEDE; 
+	vertical-align: middle; 
+	padding: 10px;
+}
+button {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 0;
+    background: #013365;
+    color: #FFF
+}
+button:active,
+button:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .25s
+}
+button:visited {
+    color: #FFF
+}
+button:active,
+button:hover {
+    background-color: #004385
+}
+
+button.button-secondary {
+    background: #F2F2F2;
+    color: #000
+}
+button.button-secondary:active,
+button.button-secondary:hover,
+button.button-secondary:visited {
+    background-color: #DEDEDE
+}
+.button {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+.button span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
+    overflow: visible;
+    border: 0;
+    color: #FFF;
+    background: #013365
+}
+.button span:active,
+.button span:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15) !important;
+    transition: box-shadow .25s
+}
+.button span:hover {
+    background-color: #004385 !important;
+}
+.button spanvisited {
+    color: #FFF
+}
+.button-secondary {
+    cursor: pointer;
+    margin-bottom: 0.5em
+}
+.button-secondary span {
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow .25s;
+    outline: none;
+    overflow: visible;
+    border: 0;
+    color: #004385;
+    background: #fff;
+    border-radius: 100px
+}
+
+.button-secondary span:active,
+.button-secondary span:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: box-shadow .25s
+}
+.button-secondary span:hover {
+    text-decoration: none;
+    background: #F2F2F2
+}
+.legal {	
+    font-family: Montserrat, Helvetica, Arial, sans-serif;	
+	font-size: 12px !important;
+	color: #444;	
+}
+.social {
+    padding-top: 10px;
+	text-align: right;
+}
+.social a {
+	margin: 0 5px;
+	outline: none;
+	font-size: 12px !important;
+}
+.social a:hover {
+	text-decoration: none;
+}
+.note {
+	border: 2px solid #dedede;
+	padding: 10px;
+	Margin: 10px 0;
+}
+ol {
+	margin: margin: 1.25em 0 1.25em 0;
+}
+ol li,
+ul li {
+    line-height: 1.4em;
+    margin: .5em 0 0
+}
+ul.bullet {
+    margin: 1.25em 0 1.25em 0
+}
+ul.bullet li {
+    list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath fill='%23004385' d='M12,17.5A5.5,5.5,0,1,1,17.5,12,5.507,5.507,0,0,1,12,17.5'/%3E%3C/svg%3E")
+}
+
+.cta {
+	margin: 20px 0;
+	text-align: center !important;
+}
+
+.cta-lg {
+	Margin: 20px 10px;	
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.cta-lg p {
+    display: block;
+	color: #000000;
+	text-align: center !important;
+	Margin-top: 0px;
+}
+
+.cta p {
+    display: block;
+	color: #000000;
+	text-align: center;
+}
+
+.regards {
+	Margin-top: 50px;
+	Margin-bottom: 40px;
+}
+table.default_table  {
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+	margin: 30px 0px !important;
+}
+table.default_table  .even {
+    background-color: #FFF
+}
+table.default_table thead,
+table.default_table  th {
+    line-height: 1.1em;
+    font-weight: normal;
+    padding: 10px 20px;
+    text-align: left;
+    background: #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    vertical-align: middle
+}
+table.default_table  td {
+    vertical-align: top;
+    border-width: 0 1px;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 2px solid #F2F2F2
+}
+table.default_table.centered th:not(:first-child),
+table.default_table.centered td:not(:first-child) {
+    text-align: center
+}
+/* ------------------------------------- 
+    ONE COLUMN LAYOUT 
+------------------------------------- */
+.one-column .contents {
+    text-align: center;
+}
+.one-column .contents {
+    text-align: center;
+}
+.one-column .text {
+    padding-top: 10px;
+	text-align: left !important;
+}
+
+/* ------------------------------------- 
+    TWO COLUMN LAYOUT 
+------------------------------------- */
+.two-column {
+	text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+	width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contents {
+	width: 100%;
+}
+.two-column .contents {
+    text-align: center;
+}
+.two-column img {
+    max-width: 100%;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    THREE COLUMNS LAYOUT / 1+1+1
+------------------------------------- */
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    text-align: center;
+}
+.three-column img {
+    max-width: 100%;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+/* ------------------------------------- 
+    LEFT SIDEBAR LAYOUT 
+------------------------------------- */
+.left-sidebar {
+	text-align: center;
+    font-size: 0;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    max-width: 30%;
+}
+.left-sidebar .right {
+    max-width: 70%;
+}
+.left-sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+.left-sidebar .contents {
+    text-align: center;
+}
+/* ------------------------------------- 
+    RIGHT SIDEBAR LAYOUT 
+------------------------------------- */
+.right-sidebar {
+	text-align: center;
+    font-size: 0;
+}
+.right-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.right-sidebar .left {
+    max-width: 30%;
+}
+.right-sidebar .right {
+    max-width: 70%;
+}
+.right-sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+.right-sidebar .contents {
+    text-align: center;
+}
+/* ------------------------------------- 
+    MODIFIERS 
+------------------------------------- */
+.s-box {
+	background-color: #dedede;
+	min-height: 100px;
+	border: 1px solid #cccccc;
+}
+.contents p {
+	text-align: left;
+}
+.section-title {
+	text-align: center;
+	border-top: 1px solid #dedede;
+}
+.font-s{
+    font-size: 14px;
+}
+.font-xs{
+    font-size: 12px;
+}
+.primary-color {
+    background-color: #004385;
+}
+.primary-bg-color {
+    background-color: #FFFFFF;
+}
+.secondary-color {
+    color: #004385;
+}
+.secondary-bg-color {
+    background-color: #004385;
+}
+.primary-color-dark {
+    background-color: #013365;
+}
+
+.primary-bg-color-dark {
+    background-color: #013365;
+}
+
+.content-inverse-color {
+    color: #FFFFFF;
+}
+.fill-bg-color {
+    background-color: #F2F2F2;
+}
+.centered {
+    text-align: center !important;
+}
+.justify {
+	text-align: justify !important;
+    text-justify: inter-word;
+}
+.text-left {
+	text-align: left !important;
+}
+.separator-line {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+.separator {
+    height: 2px
+}
+.separator-lg {
+    height: 10px
+}
+.separator-line-thin-gray {
+    height: 1px; 
+	background-color: #DEDEDE;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.separator-line-thin-gray-sm {
+    height: 1px; 
+	background-color: #DEDEDE;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.bordered {
+    border: 1px solid #004385
+}
+.separator-title {margin: 0 !important;}
+/* ------------------------------------- 
+    RESPONSIVE
+------------------------------------- */
+@media screen and (max-width: 480px) {	
+	.two-column .column,
+    .three-column .column {
+        max-width: 100% !important;
+    }
+    .two-column img {
+        max-width: 100% !important;
+    }
+    .three-column img {
+        max-width: 50% !important;
+    }
+	.one-third-column  {
+        max-width: 100% !important;
+    }
+	.left-sidebar .left, .left-sidebar .right,
+	.right-sidebar .left, .right-sidebar .right {	 
+		max-width: 100%;
+	}
+	.FX_table td {
+		width: 94% !important;
+		display: block !important;
+	}
+	.social, .support, .support p, .legal-nav {
+		text-align: center !important;
+	}
+}
+@media screen and (min-width: 481px) {
+	.three-column .column {
+        max-width: 33% !important;
+    }
+    .two-column .column {
+        max-width: 50% !important;
+    }
+}
+</style>
+</head>
+<body>
+    <center class="wrapper">
+        <div class="webkit">
+            <!--[if mso]>
+			<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+			<td>
+			<![endif]-->
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<!-- HEADER BANNER -->				
+				<tr>
+					<td>
+						<table class="outer" align="center">
+							<tr>
+								<td class="cfx-logo">
+									<img src="https://style.champion-fx.com/images/email/logo_600px_b.png" width="280" alt="Champion FX" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+				{{content}}	
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="text">
+												<p>Dear Trader,</p>
+												<p>You’ve successfully created your ChampionFX MT5 demo account.</p>
+												<p>Here are your login credentials:</p>
+												<table width="100%" class="FX_table">
+													<tbody><tr>
+														<td class="FX_td__title">Account type</td>
+														<td class="FX_td">Cent Demo</td>
+													</tr>
+													<tr>
+														<td class="FX_td__title">Trading platform</td>
+														<td class="FX_td">MetaTrader 5</td>
+													</tr>
+													<tr>
+														<td class="FX_td__title">MT5 platform login</td>
+														<td class="FX_td">{{customer.MT5_demo_id}}</td>
+													</tr>
+													<tr>
+														<td class="FX_td__title">Trading server</td>
+														<td class="FX_td">ChampionGroup-Server</td>
+													</tr>
+												</tbody></table>
+												<h2 class="m_top_30">Trading platforms</h2>
+												<p><a target="_blank" href="https://www.champion-fx.com/en/trading-platform/metatrader-5.html?utm_source=customerio&utm_medium=email&utm_campaign=cfx_welcome_mt5_demo">Launch our MT5 platform now</a> and start trading today. We offer three versions of MT5:</p>																																				
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<!-- ------------------------------------- 
+					3 columns layout
+				----------------------------------------->
+				<tr>
+					<td class="three-column"><h2 class="separator-title">Available on desktop, web, and mobile</h2>
+						<!--[if mso]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<h3>MetaTrader 5<br />desktop app</h3>
+													<p class="centered">Trade with a powerful interface known as the global industry standard.</p>
+													<div class="cta">
+														<!--[if mso]>
+														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:300px;" arcsize="360%" stroke="f" fillcolor="#013365">
+														<w:anchorlock/>
+														<center>
+														<![endif]-->
+														<a class="button" href=""><span>Download</span></a>
+														<!--[if mso]>
+														</center>
+														</v:roundrect>
+														<![endif]-->
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<h3>MetaTrader 5<br />web platform</h3>
+													<p class="centered">Trade from any browser in Windows, MacOS, or Linux operating systems.</p>
+													<div class="cta">
+														<!--[if mso]>
+														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:300px;" arcsize="360%" stroke="f" fillcolor="#013365">
+														<w:anchorlock/>
+														<center>
+														<![endif]-->
+														<a class="button" href=""><span>Launch</span></a>
+														<!--[if mso]>
+														</center>
+														</v:roundrect>
+														<![endif]-->
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<h3>MetaTrader 5<br />mobile app</h3>
+													<p class="centered">Trade from your iOS or Android devices with our native mobile apps.</p>
+													<a href=""><img src="https://academy.champion-fx.com/assets/images/app-store.png" width="135" height="40"></a>
+													<a href=""><img src="https://academy.champion-fx.com/assets/images/google-play.png" width="135" height="40"></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<!-- ------------------------------------- 
+					1 column layout
+				----------------------------------------->
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td>
+												<p>Please note that this demo account is based on our <a target="_blank" href="https://www.champion-fx.com/en/forex/accounts/cent.html?utm_source=customerio&utm_medium=email&utm_campaign=cfx_welcome_mt5_demo">Cent account</a> specifications.</p>
+												<p>Got queries? Our customer support team is available to assist you. <a target="_blank" href="https://www.champion-fx.com/en/contact.html?utm_source=customerio&utm_medium=email&utm_campaign=cfx_welcome_mt5_demo">Contact us</a> by live chat, telephone, or <a target="_blank" href="mailto:support@champion-fx.com">email</a> now.</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>	
+			</table>	
+			<!-- ./content -->	
+			<table class="outer" align="center" cellpadding="0" cellspacing="0" border="0">						
+				<!-- Footer - 2 columns layout -->
+				<tr>
+					<td class="two-column">
+						<div class="separator-line-thin-gray-sm"></div>
+						<!--[if mso]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="text font-s support">
+													<p>Have a question? Need Help?</p>
+                                                    <p>Email us at <a href="mailto:support@champion-fx.com">support@champion-fx.com</a>.</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>						
+						<!--[if mso]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td class="text">
+													<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td class="social">
+                                                                <a href="https://www.youtube.com/channel/UCBqTu-uQkmaIh5wgBswo2TA?utm_source=customerio&utm_medium=email&utm_campaign=cfx_template">
+                                                                    <img src="https://style.champion-fx.com/images/email/youtube.png" width="35" alt="YouTube" />
+                                                                </a>
+                                                                <a href="https://www.facebook.com/championFX/?utm_source=customerio&utm_medium=email&utm_campaign=cfx_template">
+                                                                    <img src="https://style.champion-fx.com/images/email/facebook.png" width="35" alt="Facebook" />
+                                                                </a>
+                                                                <a href="https://twitter.com/champion_fx?utm_source=customerio&utm_medium=email&utm_campaign=cfx_template">
+                                                                    <img src="https://style.champion-fx.com/images/email/twitter.png" width="35" alt="Twitter" />
+                                                                </a>                                                               
+                                                            </td>
+                                                        </tr>                                                        
+                                                    </table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if mso]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<!-- Legal - 1 column layout -->
+				<tr>
+					<td class="one-column">
+						<div class="separator-line-thin-gray-sm"></div>
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td>
+												<div class="legal">
+													<p class="justify">This email has been issued by ChampionFX. ChampionFX is licensed and regulated by the Vanuatu Financial Services Commission, Rue Bougainville, Port Vila, Vanuatu. Binary options, Forex, and CFD trading may incur losses as well as gains. Prices shown on the website may vary and/or fluctuate due to changes in the currency exchange rates and/or price movements, which may impact your return of investment.</p>
+													<p class="legal-nav"><a href="https://www.champion-fx.com/en/terms-and-conditions.html">Terms and Conditions</a>&nbsp;|&nbsp;<a href="https://www.champion-fx.com/en/terms-and-conditions.html#risk-tab">Risk Disclaimer</a>&nbsp;|&nbsp;<a href="https://www.champion-fx.com/en/terms-and-conditions.html#order-tab">Order Execution</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column">					
+						<table width="100%">
+							<tr>
+								<td class="inner">
+									<table class="contents">
+										<tr>
+											<td class="fill-bg-color">
+												<p class="font-s centered">Don't wish to receive these emails anymore? <a href="{% unsubscribe_url %}" class="untracked">Unsubscribe</a></p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--[if mso]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+        </div>
+    </center>
+</body>
+</html>
